@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Quiz</title>
+</head>
+<body>
+<h1>Register</h1>
+
+<form>
+	<div>
+		<label for = "firstname">First Name:</label>
+		<input id = "firstname" type="text" placeholder = "Joe" required>
+		<label for = "lastname"> Last Name:</label>
+		<input id = "lastname" type = "text" placeholder = "Smith" required>
+	</div>
+
+	<div>
+		<label for = "male">Male:</label>
+		<input id = "male" type="radio" name="sex" value = "male">
+
+		<label for = "female">Female:</label>
+		<input id = "male" type="radio" name="sex" value = "female">
+
+		<label for = "other">Other:</label>
+		<input id = "other" type="radio" name="sex" value = "other">	
+	</div>
+
+	<div>
+		<label for = "email">Email:</label>
+		<input id = "email" type="email" placeholder = "email" required>
+
+		<label for = "password">Password:</label>
+		<!-- There are a couple of ways to validate pw length -->
+		<input id = "password" type = "password"  minlength = "5" maxlength = "10" size = "10" required>
+		<input id = "password" type = "password"  pattern = ".{5,10}" required title = "Password must be 5 to 10 characters">
+	</div>
+
+	<div>
+		Birthday:
+		<select name = "month">
+			<option>Month</option>
+			<option value = "jan">January</option>
+			<option value = "feb">February</option>
+			<option value = "mar">March</option>
+			<option value = "apr">April</option>
+		</select>
+		<select name = "day">
+			<option>Day</option>
+			<option value = "one">1</option>
+			<option value = "two">2</option>
+			<option value = "three">3</option>
+			<option value = "four">4</option>
+			<option value = "five">5</option>
+		</select>
+		<select name = "year">
+			<option>Year</option>
+			<option value = "2000">2000</option>
+			<option value = "2001">2001</option>
+			<option value = "2002">2002</option>
+			<option value = "2003">2003</option>
+		</select>
+	</div>
+
+	<div>
+		<input type = "checkbox" id = "terms" required>
+		<label for = "terms">I agree to the Terms and Conditions</label>
+
+
+	</div>
+
+	<button>Submit</button>
+</form>
+
+</body>
+</html>

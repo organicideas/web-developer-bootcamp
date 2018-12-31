@@ -1,0 +1,51 @@
+/*Tutsplus: 30 CSS Selectors*/
+
+/*Element*/
+li {
+
+}
+
+/*class*/
+.hello{
+
+}
+
+/*id*/
+#name{
+
+}
+
+/*Star: selects every element on page*/
+* {
+	border: 1px solid lightgrey;
+}
+
+/*Descendant Selector: string of elements, applies styles to the last
+	Below selects only anchor tags inside of an li, not any other anchor
+	tags on page */
+li a {
+
+}
+
+/*Adjacent Selector: select elements that come after another element
+	Below selects all ul's that come after a H4 */
+h4 + ul {
+
+}
+
+/*Attribute Selector: select elements based on any attribute
+	Below selects all anchor tags with an href of http://www.google.com */
+a[href = "http://www.google.com"] {
+
+}
+
+/*Second Attribute Selector example: style all checkboxes a certain way*/
+input[type = "checkbox"] {
+
+}
+
+/*nth of type: takes a number and applies to every nth element
+	Below applies to every other ul (can use a number as well, play around with it)*/
+ul: nth-of-type(even) {
+
+}
